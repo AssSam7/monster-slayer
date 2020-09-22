@@ -4,6 +4,7 @@ new Vue({
     playerHealth: 100,
     monsterHealth: 100,
     gameIsRunning: false,
+    turns: [],
   },
   methods: {
     startGame() {
@@ -12,9 +13,19 @@ new Vue({
       this.playerHealth = 100;
       this.monsterHealth = 100;
     },
+    endGame() {
+      this.gameIsRunning = false;
+    },
     attack() {
       // Damage given to monster by player
-      this.monsterHealth -= this.calculateDamage(3, 10);
+      let damage = this.calculateDamage(3, 10);
+      this.monsterHealth -= damage;
+
+      // Adding the attack to the turns log
+      this.turns.unshift({
+        isPlayer: true,
+        text: `Player hits the monster and damages ${damage} HP`,
+      });
 
       // Check if we won
       if (this.checkWin()) {
@@ -47,10 +58,19 @@ new Vue({
       // Monster attacks
       this.monsterAttacks();
     },
-    giveUp() {},
+    giveUp() {
+      // If the player decides to give up stop the game
+      this.endGame();
+    },
     // Reduce the health of the player when the monster attacks
     monsterAttacks() {
-      this.playerHealth -= this.calculateDamage(5, 12);
+      let damage = this.calculateDamage(5, 12);
+      this.playerHealth -= damage;
+      // Adding the attack to the turns log
+      this.turns.unshift({
+        isPlayer: false,
+        text: `Monster hits the player and damages ${damage} HP`,
+      });
       this.checkWin();
     },
     calculateHealing(min, max) {

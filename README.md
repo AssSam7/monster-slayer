@@ -228,3 +228,31 @@ healUp() {
   this.monsterAttacks();
 }
 ```
+
+## Rendering the Game feed 🎲
+
+Every move or action player performs would render a game feed to the template highlighting the action
+
+### 1. Creating a turns array for the feed
+
+Adding the turns property to the data
+
+```javascript
+data: {
+  playerHealth: 100,
+  monsterHealth: 100,
+  gameIsRunning: false,
+  turns: [],
+}
+```
+
+### 2. Adding the items to the turns array
+
+Since every new action should be top of the feed, we should use the **unshift()** method instead of **push()**
+
+```javascript
+this.turns.unshift({
+  isPlayer: true,
+  text: `Player hits the monster and damages ${damage} HP`,
+});
+```
