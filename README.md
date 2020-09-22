@@ -6,7 +6,7 @@
 
 1. [Live demo](#live-demo-)
 2. [Tech stack](#tech-stack-)
-3. [User stories](#user-stories-)
+3. [User stories](#user-stories-%EF%B8%8F)
 4. [Hooking up the health bars](#hooking-up-the-health-bars-)
 5. [Implementing the game](#implementing-the-game-)
 6. [Rendering the game feed](#rendering-the-game-feed-)
@@ -15,7 +15,7 @@
 
 https://festive-hopper-c7f0c4.netlify.app/
 
-## Tech Stack 👩‍💻
+## Tech Stack 💻
 
 - 🌈 Foundation CSS
 - 🟩 Vue JS
