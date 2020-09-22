@@ -46,7 +46,7 @@
       <li><a href="#1-creating-a-turns-array-for-the-feed">Creating a turns array for the feed</a></li>
       <li><a href="#2-adding-the-items-to-the-turns-array">Adding the items to the turns array</a></li>
       <li><a href="#3-outputting-the-feed-using-v-for">Outputting the feed using v-for</a></li>
-      <li><a href="#4-conditonally-styling-the-log">Conditionally styling the log</a></li>
+      <li><a href="#4-conditionally-styling-the-log>Conditionally styling the log</a></li>
     </ol>
   </li>
 </ol>
