@@ -1,4 +1,4 @@
-<h1> Welcome to Monster Slayer 👹</h1>
+<h1 align="center"> Welcome to Monster Slayer 👹</h1>
 
 > This app is actually a game called 'Monster Slayer'. There is a player and a monster, the objective of the player is to defeat monster and reduce his health to 0. Player gets a special attack which helps him to slay the monster easily.
 
