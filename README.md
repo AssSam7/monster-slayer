@@ -2,10 +2,17 @@
 
 > This app is actually a game called 'Monster Slayer'. There is a player and a monster, the objective of the player is to defeat monster and reduce his health to 0. Player gets a special attack which helps him to slay the monster easily.
 
+## Table of contents 📔
+
+1. [Hooking up the health bars](#hooking-up-the-health-bars-)
+2. [Implementing the game](#implementing-the-game-)
+3. [Rendering the game feed](#rendering-the-game-feed-)
+
 ## Tech Stack 👩‍💻
 
 - 🌈 Foundation CSS
 - 🟩 Vue JS
+- 🟨 Javascript (ES6+)
 
 ## User Stories 🏷️
 
@@ -255,4 +262,37 @@ this.turns.unshift({
   isPlayer: true,
   text: `Player hits the monster and damages ${damage} HP`,
 });
+```
+
+### 3. Outputting the feed using v-for
+
+Since all the turns are present in this array (turns), we can render it to the template using v-for directive
+
+```html
+<section class="row log" v-if="turns.length" id="feed">
+  <div class="small-12 columns">
+    <ul>
+      <li v-for="turn in turns">{{ turn.text }}</li>
+    </ul>
+  </div>
+</section>
+```
+
+### 4. Conditionally styling the log
+
+In the turns array while we are passing the data to the feed, we are also passing if it's player or not to conditionally style the log for player and monster. Apply the **player-turn** class if it's a player, else apply **monster-turn** class
+
+```html
+<section class="row log" v-if="turns.length" id="feed">
+  <div class="small-12 columns">
+    <ul>
+      <li
+        v-for="turn in turns"
+        :class="{'player-turn': turn.isPlayer, 'monster-turn': !turn.isPlayer}"
+      >
+        {{ turn.text }}
+      </li>
+    </ul>
+  </div>
+</section>
 ```

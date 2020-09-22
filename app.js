@@ -12,9 +12,21 @@ new Vue({
       // Resetting the healths
       this.playerHealth = 100;
       this.monsterHealth = 100;
+
+      // Adding the start new game to the turns log
+      this.turns = [];
+      this.turns.unshift({
+        isPlayer: true,
+        text: `Player has started a new game`,
+      });
     },
     endGame() {
       this.gameIsRunning = false;
+
+      this.turns.unshift({
+        isPlayer: true,
+        text: `Player has ended the game`,
+      });
     },
     attack() {
       // Damage given to monster by player
@@ -37,7 +49,14 @@ new Vue({
     },
     specialAttack() {
       // Damage given to monster by player
-      this.monsterHealth -= this.calculateDamage(10, 20);
+      let damage = this.calculateDamage(10, 20);
+      this.monsterHealth -= damage;
+
+      // Adding the special attack to the turns log
+      this.turns.unshift({
+        isPlayer: true,
+        text: `Player hits the monster and damages ${damage} HP using the special attack`,
+      });
 
       // Check if we won
       if (this.checkWin()) {
@@ -54,6 +73,12 @@ new Vue({
       } else {
         this.playerHealth = 100;
       }
+
+      // Adding the special attack to the turns log
+      this.turns.unshift({
+        isPlayer: true,
+        text: "Player heals for 10HP to recover",
+      });
 
       // Monster attacks
       this.monsterAttacks();
