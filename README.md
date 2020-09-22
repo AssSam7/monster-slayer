@@ -24,9 +24,9 @@
   <li>
     <a href="#hooking-up-the-health-bars-">Hooking up the health bars</a>
     <ol>
-      <li><a href="#vue-instance-setup">1-Vue Instance Setup</a></li>
+      <li><a href="#1-vue-instance-setup">Vue Instance Setup</a></li>
       <li>
-        <a href="#html-template-binding-the-data">2-HTML Template (Binding the data)</a>
+        <a href="#2-html-template-binding-the-data">HTML Template (Binding the data)</a>
       </li>
     </ol>
   </li>
