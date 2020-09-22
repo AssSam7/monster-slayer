@@ -87,3 +87,30 @@ We can use the above health data to display onto the template and also style the
   </div>
 </section>
 ```
+
+## Starting the game 🎬
+
+Whenever the user clicks the **Start new game** button, it should hide this panel, show user the attacks panel by setting the boolean to true
+
+### 1. Adding the click event to Start new game button
+
+Since we have to write some bunch of code here, we call a method serving this purpose
+
+```html
+<div class="small-12 columns">
+  <button id="start-game" @click="startGame">START NEW GAME</button>
+</div>
+```
+
+Writing the initial functionality in this method
+
+```javascript
+methods: {
+    startGame() {
+      this.gameIsRunning = true;
+      // Resetting the healths
+      this.playerHealth = 100;
+      this.monsterHealth = 100;
+    },
+  }
+```
