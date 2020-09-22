@@ -4,12 +4,52 @@
 
 ## Table of contents 📔
 
-1. [Live demo](#live-demo-)
+<!-- 1. [Live demo](#live-demo-)
 2. [Tech stack](#tech-stack-)
 3. [User stories](#user-stories-)
 4. [Hooking up the health bars](#hooking-up-the-health-bars-)
 5. [Implementing the game](#implementing-the-game-)
-6. [Rendering the game feed](#rendering-the-game-feed-)
+6. [Rendering the game feed](#rendering-the-game-feed-) -->
+
+<ol>
+  <li>
+    <a href="#live-demo-">Live demo</a>
+  </li>
+  <li>
+    <a href="#tech-stack-">Tech stack</a>
+  </li>
+  <li>
+    <a href="#user-stories-">User stories</a>
+  </li>
+  <li>
+    <a href="#hooking-up-the-health-bars-">Hooking up the health bars</a>
+    <ol>
+      <li><a href="#vue-instance-setup">Vue Instance Setup</a></li>
+      <li>
+        <a href="#html-template-binding-the-data">HTML Template (Binding the data)</a>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <a href="#implementing-the-game-">Implementing the game</a>
+    <ol>
+      <li><a href="#adding-the-click-event-to-the-start-new-game-button">Adding the click event to Start new game button</a></li>
+      <li><a href="#implementing-the-attack">Implementing the attack</a></li>
+      <li><a href="#check-win">Check win</a></li>
+      <li><a href="#implementing-the-special-attack">Implementing the special attack</a></li>
+      <li><a href="#implementing-the-heal-mechanism">Implementing the heal mechanism</a></li>
+    </ol>
+  </li>
+  <li>
+    <a href="#rendering-the-game-feed-">Rendering the game feed</a>
+    <ol>
+      <li><a href="#">Creating a turns array for the feed</a></li>
+      <li><a href="#">Adding the items to the turns array</a></li>
+      <li><a href="#">Outputting the feed using v-for</a></li>
+      <li><a href="#">Conditionally styling the log</a></li>
+    </ol>
+  </li>
+</ol>
 
 ## Live Demo 🪁
 
@@ -106,7 +146,7 @@ We can use the above health data to display onto the template and also style the
 
 Whenever the user clicks the **Start new game** button, it should hide this panel, show user the attacks panel by setting the boolean to true
 
-### 1. Adding the click event to Start new game button
+### 1. Adding the click event to the Start new game button
 
 Since we have to write some bunch of code here, we call a method serving this purpose
 
