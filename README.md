@@ -4,9 +4,16 @@
 
 ## Table of contents 📔
 
-1. [Hooking up the health bars](#hooking-up-the-health-bars-)
-2. [Implementing the game](#implementing-the-game-)
-3. [Rendering the game feed](#rendering-the-game-feed-)
+1. [Live demo](#live-demo-)
+2. [Tech stack](#tech-stack-)
+3. [User stories](#user-stories-)
+4. [Hooking up the health bars](#hooking-up-the-health-bars-)
+5. [Implementing the game](#implementing-the-game-)
+6. [Rendering the game feed](#rendering-the-game-feed-)
+
+## Live Demo 🪁
+
+https://festive-hopper-c7f0c4.netlify.app/
 
 ## Tech Stack 👩‍💻
 
