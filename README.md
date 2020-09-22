@@ -24,29 +24,29 @@
   <li>
     <a href="#hooking-up-the-health-bars-">Hooking up the health bars</a>
     <ol>
-      <li><a href="#vue-instance-setup">Vue Instance Setup</a></li>
+      <li><a href="#vue-instance-setup">1-Vue Instance Setup</a></li>
       <li>
-        <a href="#html-template-binding-the-data">HTML Template (Binding the data)</a>
+        <a href="#html-template-binding-the-data">2-HTML Template (Binding the data)</a>
       </li>
     </ol>
   </li>
   <li>
     <a href="#implementing-the-game-">Implementing the game</a>
     <ol>
-      <li><a href="#adding-the-click-event-to-the-start-new-game-button">Adding the click event to Start new game button</a></li>
-      <li><a href="#implementing-the-attack">Implementing the attack</a></li>
-      <li><a href="#check-win">Check win</a></li>
-      <li><a href="#implementing-the-special-attack">Implementing the special attack</a></li>
-      <li><a href="#implementing-the-heal-mechanism">Implementing the heal mechanism</a></li>
+      <li><a href="#1-adding-the-click-event-to-the-start-new-game-button">Adding the click event to Start new game button</a></li>
+      <li><a href="#2-implementing-the-attack">Implementing the attack</a></li>
+      <li><a href="#3-check-win">Check win</a></li>
+      <li><a href="#4-implementing-the-special-attack">Implementing the special attack</a></li>
+      <li><a href="#5-implementing-the-heal-mechanism">Implementing the heal mechanism</a></li>
     </ol>
   </li>
   <li>
     <a href="#rendering-the-game-feed-">Rendering the game feed</a>
     <ol>
-      <li><a href="#">Creating a turns array for the feed</a></li>
-      <li><a href="#">Adding the items to the turns array</a></li>
-      <li><a href="#">Outputting the feed using v-for</a></li>
-      <li><a href="#">Conditionally styling the log</a></li>
+      <li><a href="#1-creating-a-turns-array-for-the-feed">Creating a turns array for the feed</a></li>
+      <li><a href="#2-adding-the-items-to-the-turns-array">Adding the items to the turns array</a></li>
+      <li><a href="#3-outputting-the-feed-using-v-for">Outputting the feed using v-for</a></li>
+      <li><a href="#4-conditonally-styling-the-log">Conditionally styling the log</a></li>
     </ol>
   </li>
 </ol>
